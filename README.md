@@ -14,4 +14,11 @@ https://bit.ly/mm-heroku
 
 This app is running on a free "Hobby"-level account at Heroku.
 
+# Flask templates
+
+There are two templates in this app. Because I'm using the Flask-Bootstrap4 extension, I do not have a HEAD element in the template HTML — the HEAD comes from *base.html,* which is included in the [Flask-Bootstrap4](https://pypi.org/project/Flask-Bootstrap4/) extension and not visible in this repo.
+
+Jinja2’s `super()` function allows us to insert things into that hidden HEAD, as explained in the [Templates](https://pythonhosted.org/Flask-Bootstrap/basic-usage.html#templates) section of the Flask-Bootstrap4 documentation.
+
+
 .
